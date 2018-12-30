@@ -15,8 +15,8 @@ You will need to build it.
 
 First, clone or download this repository. Personally, I recommend you to use IntelliJ IDEA and clone it. 
 
-Supposing you are using IntelliJ IDEA, after cloning the repository, select the "Export Jar" gradle task and run it.
+By supposing you are using IntelliJ IDEA, after cloning the repository, select the "Export Jar" gradle task and run it.
 This will build and generate the .jar file in the build/libs/ folder. The build/libs/ folder is in the same folder of your project.
 
 ## How can I use it?
-The instructions are already in the software.
+The instructions are already in the software. It's very easy to use.
