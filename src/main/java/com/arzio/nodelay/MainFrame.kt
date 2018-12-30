@@ -19,6 +19,7 @@ package com.arzio.nodelay
 
 import com.arzio.nodelay.network.MainServer
 import java.awt.Toolkit
+import java.net.BindException
 
 
 object MainFrame : javax.swing.JFrame() {
@@ -45,9 +46,14 @@ object MainFrame : javax.swing.JFrame() {
 
         btnSocket.addActionListener {
             if (btnSocket.isSelected) {
-                MainServer.start()
-                btnSocket.text = "Stop Socket"
-                txtServerIP.isEditable = false
+                try {
+                    MainServer.start()
+                    btnSocket.text = "Stop Socket"
+                    txtServerIP.isEditable = false
+                } catch (e: BindException){
+                    setStatusMessage("There is already a running server!")
+                    btnSocket.isSelected = false
+                }
             } else {
                 MainServer.stop()
                 txtServerIP.isEditable = true
