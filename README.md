@@ -1,6 +1,6 @@
 # NoDelayMC
 
-### Play with slightly less delay on 1.7 (or older) Minecraft Servers
+### Play with slightly less ping on 1.7 (or older) Minecraft Servers
 #### Note: This is for clients only.
 
 ## How this software works?
